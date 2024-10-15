@@ -1,0 +1,1 @@
+FROM rofrano/vagrant-provider:ubuntu
