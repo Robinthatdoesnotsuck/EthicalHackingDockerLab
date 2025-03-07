@@ -24,5 +24,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", path: "scripts/InstallChocolatey.ps1"
   config.vm.provision "shell", inline: "choco install vscode --yes"
   config.vm.provision "shell", inline: "choco install vcredist-all --yes"
+  config.vm.provision "shell", inline: "choco install boost-msvc-14.3 --yes"
+  config.vm.provision "shell", inline: "choco install git.portable"
 
 end
