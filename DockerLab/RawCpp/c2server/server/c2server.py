@@ -7,7 +7,7 @@ from database.db import initialize_db
 
 app = Flask(__name__)
 
-app.config["MONGODB_SETTINGS"] = {"host": "mongodb://localhost/skytree"}
+app.config["MONGODB_SETTINGS"] = {"host": "mongodb://localhost/resultsdb"}
 
 initialize_db(app)
 
